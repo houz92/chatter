@@ -1,0 +1,8 @@
+<h2>Chat room</h2>
+<div id="mymessages" *ngIf="( messages$ | async ) as chatMessage">
+  <p>
+    {{chatMessage.message}}
+  </p>
+  <span><i><b>{{ chatMessage.date | date:'mediumTime' }}</b></i></span>
+
+</div>
